@@ -16,7 +16,7 @@ stack uses the aws-cli default profile’s IAM Credentials.
 4. terraform validate (validates the code)
 5. terraform plan (shows a preview of changes)
 6. terraform apply (runs the code and applies changes)
-7. Open website using public ipv4 dns address or public ipv4 address
+7.Open website using public ipv4 dns address or public ipv4 address
 
 Features
 

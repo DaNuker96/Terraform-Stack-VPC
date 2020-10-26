@@ -1,10 +1,8 @@
-
 #provider
 variable "region" {
   type    = string
   default = "eu-west-2"
 }
-
 #ec2
 variable "ami-linux" {
   type    = string

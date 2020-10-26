@@ -13,7 +13,6 @@ resource "aws_security_group" "terraform_sg" {
     to_port     = 22
     description = "SSH Access"
   }
-
   ingress {
     protocol    = "tcp"
     cidr_blocks = [var.cidr-block-open]
