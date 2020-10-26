@@ -16,3 +16,11 @@ stack uses the aws-cli default profile’s IAM Credentials.
 4. terraform validate (validates the code)
 5. terraform plan (shows a preview of changes)
 6. terraform apply (runs the code and applies changes)
+
+Features
+
+VPC and a public subnet
+EC2 instance with user data to install apache web server
+Public facing web page with downloaded html page from s3 bucket.
+Key pair to ssh into EC2 instance
+Route table,security group and Internet gateway for internet access
