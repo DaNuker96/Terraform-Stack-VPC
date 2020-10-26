@@ -64,26 +64,5 @@ resource "aws_internet_gateway" "terraform_vpc_igw" {
   }
 }
 
-#Elastic Ip
-
-resource "aws_eip" "elastic_ip" {
-  vpc = true
-}
-
-#NAT gateway
-
-resource "aws_nat_gateway" "nat_gateway" {
-  depends_on = [
-    aws_subnet.terraform_subnet_1,
-    aws_eip.elastic_ip,
-  ]
-  allocation_id = aws_eip.elastic_ip.id
-  subnet_id     = aws_subnet.terraform_subnet_1.id
-
-  tags = {
-    Name = "nat-gateway"
-  }
-}
-
 
 
