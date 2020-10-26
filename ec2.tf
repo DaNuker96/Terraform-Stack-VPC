@@ -35,7 +35,7 @@ resource "aws_instance" "public_website_ec2" {
     Name = "terraform_ec2"
   }
 
-  #################linux commands##################
+  ############## linux commands ##################
   user_data = <<-EOF
                   #!/bin/bash
                   sudo su

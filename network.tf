@@ -66,3 +66,4 @@ resource "aws_internet_gateway" "terraform_vpc_igw" {
 
 
 
+

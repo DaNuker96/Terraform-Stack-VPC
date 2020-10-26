@@ -37,4 +37,8 @@ variable "cidr-block-open" {
   type    = string
   default = "0.0.0.0/0"
 }
+variable "trusted-ipv4-address" {
+  type    = string
+  default = "81.110.57.43/32"
+} #trusted ipv4 address(convert to cidr) for ssh connection
 
